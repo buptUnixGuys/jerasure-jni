@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 # About #
-This is the Jerasure project, by James S. Plank, Scott Simmerman, and
+It provides JNI of jerasure library using DirectByteBuffer to avoid coping bytes between java heap and system memory.
+The Jerasure project, by James S. Plank, Scott Simmerman, and
 Catherine D. Schuman.  More details can be found at
 [http://web.eecs.utk.edu/~plank/plank/papers/CS-08-627.html](http://web.eecs.utk.edu/~plank/plank/papers/CS-08-627.html)
 
@@ -19,9 +19,5 @@ The directories are as follows:
 * When using the JNI coupling, be sure to include the JAR file in your java.library.path. 
   * You can also set the library path using: java -Djava.library.path={path}
 * Make sure your JAVA_HOME environment variable is set to the JDK path
-=======
-jerasure-jni
-============
 
-It provides JNI of jerasure library using DirectByteBuffer to avoid coping bytes between java heap and system memory.
->>>>>>> 5cd5ae9e68cdfff2f3a3e53c27c33290c1b48a54
+
