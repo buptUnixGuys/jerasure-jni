@@ -34,7 +34,7 @@ public class ErasureCode {
         assert data != null && data.length == k;
         assert coding != null && coding.length == m;
         int blocksize = data[0].limit() - data[0].position();
-        assert (blocksize % 8 != 0);
+        assert (blocksize % 8 == 0);
 
         Jerasure.my_jerasure_matrix_encode(k, m, w, rsMatrixId, data, coding, blocksize);
     }
@@ -43,7 +43,7 @@ public class ErasureCode {
         assert data != null && data.length == k;
         assert coding != null && coding.length == m;
         int blocksize = data[0].limit() - data[0].position();
-        assert (blocksize % 8 != 0);
+        assert (blocksize % 8 == 0);
 
         boolean res = Jerasure.my_jerasure_matrix_decode(k, m, w, rsMatrixId, true, erasures, data, coding, blocksize);
         return res;
